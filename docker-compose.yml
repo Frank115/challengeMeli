@@ -13,10 +13,11 @@ services:
     links:
       - app
   db:
-    image: "mysql:5.7"
+    build: mysql
     container_name: db
     environment:
       - MYSQL_ROOT_PASSWORD=rootpwd
       - MYSQL_DATABASE=db
       - MYSQL_USER=user
       - MYSQL_PASSWORD=userpwd
+    

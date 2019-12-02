@@ -47,13 +47,13 @@ func configDataBase() *sql.DB {
 
 func createTable(db *sql.DB) {
 	// create table if not exists
-	sql_table := `
+	sqlTable := `
 	CREATE TABLE IF NOT EXISTS items(
 		id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 		name VARCHAR(255),
 		description VARCHAR(255)
 	);`
-	_, err := db.Exec(sql_table)
+	_, err := db.Exec(sqlTable)
 	if err != nil {
 		panic(err)
 	}
