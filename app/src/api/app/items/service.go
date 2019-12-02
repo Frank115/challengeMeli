@@ -25,7 +25,7 @@ func (s *ItemService) Item(id string) (*models.Item, error) {
 func (s *ItemService) Items() ([]*models.Item, error) {
 
 	var its []*models.Item
-	rows, err := s.DB.Query(`SELECT * FROM items;`)
+	rows, err := s.DB.Query("SELECT * FROM items")
 	if err != nil {
 		return nil, err
 	}

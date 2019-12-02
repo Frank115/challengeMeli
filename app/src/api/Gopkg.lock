@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  name = "github.com/DATA-DOG/go-sqlmock"
+  packages = ["."]
+  revision = "3f9954f6f6697845b082ca57995849ddf614f450"
+  version = "v1.3.3"
+
+[[projects]]
   name = "github.com/davecgh/go-spew"
   packages = ["spew"]
   revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
@@ -100,6 +106,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "0d87bb5c29f0f44c6bd75f387de33365a3f7d96bd31c2521b6f996b1faf601e1"
+  inputs-digest = "b828973332cd621c4da70839e6bda4c3256ccbd035ea1b1f184982aa52af269f"
   solver-name = "gps-cdcl"
   solver-version = 1
