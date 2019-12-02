@@ -11,3 +11,10 @@ El challenge consistió en realizar una API REST de Items, en donde hubo que con
 * Un tipo Error para poder discernir en el controller que tipo de error se encuentra y mostrar un status más acorde.
 * Logear errores.
 * El archivo docker-compose podría correr el schema.sql al correr la base, en vez de hacerlo en el código, que como ya estaba comentado, es mala práctica. (Lo intenté pero no pude :S )
+
+## Como correr
+
+1. Lanzar el comando `docker-compose build`
+2. Lanzar el comando `docker-compose up`
+
+Se deberia levantada la API, y lista para realizar los requests.
