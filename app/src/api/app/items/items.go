@@ -12,12 +12,12 @@ var (
 	Is models.ItemServiceInterface
 )
 
-// Configure for items
+// Configure for items (URL mapping)
 func Configure(r *gin.Engine, db *sql.DB) {
 	Is = &ItemService{DB: db}
 
 	r.GET("/item/:id", GetItem)
 	r.POST("/item", PostItem)
-	r.DELETE("/item/:id", nil)
-	r.GET("/item", nil)
+	r.DELETE("/item/:id", DeleteItem)
+	r.GET("/item", GetItems)
 }
